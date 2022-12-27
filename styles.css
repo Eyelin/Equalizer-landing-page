@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 0% 150%;
+  color: hsla(244, 23%, 12%, 1);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.45px;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 24px;
+}
+
+.container-1 {
+  margin-bottom: 126px;
+}
+
+.container-2 {
+  padding: 0;
+  position: relative;
+}
+
+.bg-pattern-2 {
+  background-image: url("images/bg-pattern-2.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: 280px;
+  background-color: black;
+  height: 600px;
+  margin-bottom: 362px;
+  border-radius: 12px;
+}
+
+.illustration-app {
+  max-width: 209px;
+  position: absolute;
+  top: -98px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.price-section {
+  background-color: #fa7453;
+  color: white;
+  padding: 48px 36px 33px;
+  position: absolute;
+  top: 380px;
+  border-radius: 12px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 12px;
+}
+
+.price-text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+
+.price {
+  font-size: 64px;
+  font-weight: 700;
+  margin-left: 6px;
+  margin-bottom: 20px;
+}
+
+.month {
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: 15px;
+}
+
+button {
+  width: 98%;
+  margin: 0 1% 16px;
+}
+
+.button-android {
+  color: black;
+}
+
+.logo-footer {
+  margin-bottom: 32px;
+}
+
+.footer-text {
+  margin-bottom: 64px;
+}
+
+.email {
+  font-weight: 700;
+}
+
+.social-icons {
+  margin-right: 19px;
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .container-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
