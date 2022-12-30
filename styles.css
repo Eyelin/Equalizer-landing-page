@@ -7,20 +7,30 @@ html {
 }
 
 body {
-  background-image: url("images/bg-main-mobile.png");
-  background-repeat: no-repeat;
-  background-position: 0% 150%;
   color: hsla(244, 23%, 12%, 1);
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   line-height: 26px;
   min-height: 100vh;
+  /* background */
+  background-image: url("images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 0px -250px;
 }
 
+/* All containers */
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Header */
 header {
-  margin-bottom: 16px;
+  margin-top: 40px;
+  margin-bottom: 64px;
 }
 
+/* Container 1 */
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -29,15 +39,13 @@ h1 {
   margin-bottom: 20px;
 }
 
-.container {
-  padding: 24px;
-}
-
 .container-1 {
-  margin-bottom: 126px;
+  margin-bottom: 166px;
 }
 
+/* Container 2 */
 .container-2 {
+  /* cero for mobile */
   padding: 0;
   position: relative;
 }
@@ -48,9 +56,9 @@ h1 {
   background-position-x: center;
   background-size: 280px;
   background-color: black;
-  height: 600px;
-  margin-bottom: 362px;
   border-radius: 12px;
+  height: 600px;
+  margin-bottom: 390px;
 }
 
 .illustration-app {
@@ -63,11 +71,11 @@ h1 {
 
 .price-section {
   background-color: #fa7453;
+  border-radius: 12px;
   color: white;
-  padding: 48px 36px 33px;
+  padding: 48px 36px;
   position: absolute;
   top: 380px;
-  border-radius: 12px;
 }
 
 h2 {
@@ -78,8 +86,6 @@ h2 {
 }
 
 .price-text {
-  font-size: 18px;
-  line-height: 28px;
   margin-bottom: 23px;
 }
 
@@ -87,7 +93,7 @@ h2 {
   font-size: 64px;
   font-weight: 700;
   margin-left: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 
 .month {
@@ -96,13 +102,38 @@ h2 {
   vertical-align: 15px;
 }
 
-button {
+.buttons {
+  --bs-btn-padding-y: 15px;
+  --bs-btn-font-size: 18px;
+  --bs-btn-font-weight: 700;
+  margin: 16px 1% 0px;
   width: 98%;
-  margin: 0 1% 16px;
 }
 
-.button-android {
-  color: black;
+.button-ios:hover {
+  background-color: #66e2dc;
+  border: #66e2dc;
+}
+
+.button-android:hover {
+  background-color: #ffb964;
+  border: #ffb964;
+}
+
+/* Footer */
+footer {
+  padding-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item-1,
+.flex-item-2,
+.flex-item-3 {
+  flex: 100%;
 }
 
 .logo-footer {
@@ -119,20 +150,169 @@ button {
 
 .social-icons {
   margin-right: 19px;
+  text-decoration: none;
+}
+
+path:hover {
+  fill: #fa7453;
 }
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
-  .container-2 {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 28px;
+    /* background */
+    background-image: url("images/bg-main-tablet.png"),
+      url("images/bg-pattern-1.svg");
+    background-position: -300px -300px, 105% -10%;
+    background-size: auto, 266px;
+  }
+
+  /* All containers */
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Header */
+  header {
+    margin-top: 62px;
+    margin-bottom: 95px;
+  }
+
+  /* Container 1 */
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.73px;
+    margin-bottom: 28px;
+    max-width: 74%;
+  }
+
+  .container-1-text {
+    max-width: 74%;
+  }
+
+  .container-1 {
+    margin-bottom: 249px;
+  }
+
+  /* Container 2 */
+  .bg-pattern-2 {
+    margin-bottom: 183px;
+  }
+
+  .illustration-app {
+    max-width: 270px;
+    top: -138px;
+    left: 11%;
+    transform: none;
+  }
+
+  .price-section {
+    max-width: 399px;
+    top: 150px;
+    left: 35%;
+    padding: 48px;
+  }
+
+  /* Footer */
+  .flex-item-1 {
+    flex: 100%;
+  }
+  .flex-item-2 {
+    flex: 60%;
+  }
+
+  .flex-item-3 {
+    flex: 40%;
+    text-align: right;
+    padding-top: 5%;
+  }
+
+  .social-icons {
+    margin-right: 0;
+    margin-left: 19px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  body {
+    font-size: 20px;
+    line-height: 34px;
+    /* background */
+    background-image: url("images/bg-main-desktop.png"),
+      url("images/bg-pattern-1.svg");
+    background-position: -350px -350px, 100% -10%;
+  }
+
+  /* Header */
+  header {
+    margin-bottom: 127px;
+  }
+
+  /* Container 1 */
+  h1 {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+    max-width: 84%;
+  }
+
+  .container-1-text {
+    max-width: 84%;
+  }
+
+  .container-1 {
+    margin-bottom: 321px;
+  }
+
+  /* Container 2 */
+  .bg-pattern-2 {
+    margin-bottom: 202px;
+  }
+
+  .illustration-app {
+    max-width: 312px;
+    top: -213px;
+    left: 11%;
+    transform: none;
+  }
+
+  .price-section {
+    max-width: 446px;
+    top: 90px;
+    left: 50%;
+    padding: 58px 59px 48px 54px;
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 22px;
+  }
+
+  .price {
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  .flex-item-1 {
+    flex: 30%;
+  }
+  .flex-item-2 {
+    flex: 50%;
+  }
+
+  .flex-item-3 {
+    flex: 20%;
+    padding-top: 2%;
+  }
 }
