@@ -21,12 +21,12 @@ This HTML & CSS-only challenge will be perfect for anyone starting to build resp
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](.images/screenshots/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/equalizer-landing-page-ndnCxvChyD)
+- [Live Site URL](https://eyelin.github.io/Equalizer-landing-page/)
 
 ## My process
 
@@ -35,6 +35,8 @@ This HTML & CSS-only challenge will be perfect for anyone starting to build resp
 - Semantic HTML5 markup
 - CSS custom properties
 - Mobile-first workflow
+- Flexbox
+- Bootstrap
 
 ### Useful resources
 
