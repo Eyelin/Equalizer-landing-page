@@ -9,7 +9,7 @@ html {
 body {
   color: hsla(244, 23%, 12%, 1);
   font-family: "IBM Plex Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
   min-height: 100vh;
   /* background */
@@ -32,7 +32,7 @@ header {
 
 /* Container 1 */
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -0.45px;
@@ -79,7 +79,7 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 40px;
   margin-bottom: 12px;
@@ -90,23 +90,24 @@ h2 {
 }
 
 .price {
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 700;
   margin-left: 6px;
   margin-bottom: 4px;
 }
 
 .month {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   vertical-align: 15px;
 }
 
 .buttons {
-  --bs-btn-padding-y: 15px;
-  --bs-btn-font-size: 18px;
-  --bs-btn-font-weight: 700;
+  font-size: 1.125rem;
+  font-weight: 700;
   margin: 16px 1% 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 98%;
 }
 
@@ -157,14 +158,10 @@ path:hover {
   fill: #fa7453;
 }
 
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px) {
-}
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   body {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
     /* background */
     background-image: url("images/bg-main-tablet.png"),
@@ -187,7 +184,7 @@ path:hover {
 
   /* Container 1 */
   h1 {
-    font-size: 64px;
+    font-size: 4rem;
     line-height: 64px;
     letter-spacing: -0.73px;
     margin-bottom: 28px;
@@ -244,7 +241,7 @@ path:hover {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   body {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 34px;
     /* background */
     background-image: url("images/bg-main-desktop.png"),
@@ -259,7 +256,7 @@ path:hover {
 
   /* Container 1 */
   h1 {
-    font-size: 88px;
+    font-size: 5.5rem;
     line-height: 88px;
     letter-spacing: -1px;
     margin-bottom: 40px;
@@ -294,7 +291,7 @@ path:hover {
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 52px;
     margin-bottom: 22px;
   }
