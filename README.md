@@ -21,7 +21,7 @@ This HTML & CSS-only challenge will be perfect for anyone starting to build resp
 
 ### Screenshot
 
-![](.images/screenshots/screenshot.png)
+![](./images/screenshots/screenshot.png)
 
 ### Links
 
