@@ -109,16 +109,15 @@ h2 {
   padding-top: 15px;
   padding-bottom: 15px;
   width: 98%;
+  border: none;
 }
 
 .button-ios:hover {
   background-color: #66e2dc;
-  border: #66e2dc;
 }
 
 .button-android:hover {
   background-color: #ffb964;
-  border: #ffb964;
 }
 
 /* Footer */
